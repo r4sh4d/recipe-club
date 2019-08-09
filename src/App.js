@@ -16,7 +16,7 @@ const API_KEY = "0d2858da5ab5402223dd18daecf67659"
 function App(props) {
   const [recipes, setRecipes] = useState([])
   const [text, setText] = useState('')
-  console.log(props)
+
   const handleSubmit = async e => {
     e.preventDefault()
     const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${text}&count=50`)
@@ -34,8 +34,6 @@ function App(props) {
     const data = JSON.stringify(recipes);
     localStorage.setItem('recipes', data)
   }, [recipes])
-
-
 
   const handleChange = text => {
     setText(text)
