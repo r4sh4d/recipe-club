@@ -46,4 +46,10 @@
   width: 120px;
   height: 120px;
   float: right;
+  animation: logoAnimation 30s infinite;
+}
+
+@keyframes logoAnimation {
+  from {transform: none}
+  to {transform: rotate(360deg)}
 }

@@ -12,6 +12,13 @@
   color: rgb(205, 205, 205);
   transition: .4s color;
 }
+.recipePublisher {
+  width: 300px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  color: rgb(162, 162, 162);
+}
 
 .recipeContainer:hover {
   transform: scale(1.01)
@@ -25,13 +32,7 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-.recipePublisher {
-  margin-top: 15px;
-  padding-left: 10px;
-  padding-bottom: 15px;
-  color: rgb(162, 162, 162);
 
-}
 
 .more {
   display: flex;

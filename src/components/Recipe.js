@@ -52,7 +52,6 @@ const Recipe = (props) => {
             {ingredients.length !== 0 &&
               ingredients.map(ingredient => <div><p className={styles.ingredient}>{ingredient}</p><hr></hr></div>)}
             <Link className={`${styles.backLink} ${styles.backButton}`} to="/">Go back</Link>
-
           </div>
 
         </div>
