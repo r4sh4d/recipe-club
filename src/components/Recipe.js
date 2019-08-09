@@ -23,8 +23,8 @@ const Recipe = (props) => {
   useEffect(() => {
     async function fetchData() {
       const id = props.match.params.id
-      // console.log(props.match)
-      console.log(id)
+      console.log(props);
+      // console.log(id)
       const request = await fetch(`https://www.food2fork.com/api/get?key=${API_KEY}&rId=${id}`)
       const results = await request.json()
       console.log(results)
