@@ -38,7 +38,7 @@ const Recipe = (props) => {
       hideSpinner()
     }
     fetchData()
-  }, [props.match.params.id])
+  }, [props.match.params.id, showSpinner, hideSpinner])
 
   return (
     <div className={styles.container}>
