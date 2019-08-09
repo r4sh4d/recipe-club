@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.main {
+  background: url('./images/hero-image.jpg');
+  min-height: 100vh;
+}
+
+
+.recipesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 30px;
+  padding-top: 70px;
+}

@@ -1,0 +1,31 @@
+
+@media screen and (max-width: 768px) {
+  .header{ 
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 40px;
+  height: 140px;
+  box-shadow: 4px 4px 25px rgb(9, 9, 9);
+  padding: 0 50px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url('../images/header.jpg');
+  background-size: cover;
+  text-shadow: 1px 1px 5px rgb(133, 133, 133);
+}
+
+.author {
+  display: block;
+  color: rgb(210, 210, 210);
+  font-size: 15px;
+  text-transform: none;
+}

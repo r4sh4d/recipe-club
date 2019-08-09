@@ -1,0 +1,106 @@
+.container {
+  background: url('../images/hero-image.jpg');
+  min-height: 100vh;
+}
+
+.backButton {
+  padding: 15px;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  margin: 20px auto;
+  border: 1px solid rgb(215, 59, 24);
+  color: transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+  z-index: 1;
+}
+.backButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  background-color: rgba(117, 117, 117, 0.1);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: .3s transform;
+}
+.backButton:hover::before {
+  transform: scaleX(1)
+}
+
+.backLink{
+  color: rgb(215, 59, 24);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.recipeImage {
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .backButton {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;
+    border: 1px solid rgb(215, 59, 24);
+    border-radius: 10px;
+  }
+  .backButton::before {
+    border-radius: 10px;
+  }
+  .backLink {
+    font-size: 15px;
+  }
+  .recipeImage {
+    width: 350px;
+    height: auto;
+  }
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.recipeTitle {
+  text-align: center;
+  width: 350px;
+  margin-top: 30px;
+  color: rgb(99, 98, 98)
+}
+
+.recipePublisher {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(99, 98, 98)
+}
+
+
+.recipeUrlContainer {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(57, 57, 57);
+}
+
+.recipeUrl {
+  display: block;
+  font-size: 18px;
+  color: rgb(215, 59, 24);
+}
