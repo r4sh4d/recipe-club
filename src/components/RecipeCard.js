@@ -10,8 +10,7 @@ const RecipeCard = props => {
       <p className={styles.recipePublisher}>Publisher: {props.publisher}</p>
       <Link to={{
         pathname: `/recipe/${props.id}`,
-        state: { recipe: props.title }
-
+        state: { recipe: props.id }
       }} className={styles.more}>View More</Link>
     </div>
   )

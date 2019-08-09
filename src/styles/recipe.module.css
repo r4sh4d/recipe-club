@@ -4,10 +4,9 @@
 }
 
 .backButton {
+  position: relative;
   padding: 15px;
-  position: absolute;
-  top: 150px;
-  left: 30px;
+  width: 50%;
   margin: 20px auto;
   border: 1px solid rgb(215, 59, 24);
   color: transparent;
@@ -26,12 +25,12 @@
   border-radius: 5px;
   z-index: -1;
   background-color: rgba(117, 117, 117, 0.1);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: .3s transform;
+  transform: scaleX(0) scaleY(0);
+  /* transform-origin: center; */
+  transition: .5s transform;
 }
 .backButton:hover::before {
-  transform: scaleX(1)
+  transform: scaleX(1) scaleY(1);
 }
 
 .backLink{
@@ -41,51 +40,30 @@
 }
 
 .recipeImage {
-  height: 300px;
+  width: 350px;
   margin-top: 30px;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .backButton {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 350px;
-    border: 1px solid rgb(215, 59, 24);
-    border-radius: 10px;
-  }
-  .backButton::before {
-    border-radius: 10px;
-  }
-  .backLink {
-    font-size: 15px;
-  }
-  .recipeImage {
-    width: 350px;
-    height: auto;
-  }
-}
-
 .recipeContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
 }
-
 
 .recipeTitle {
   text-align: center;
   width: 350px;
   margin-top: 30px;
-  color: rgb(99, 98, 98)
+font-weight: 400;
+  text-transform: uppercase;
 }
 
 .recipePublisher {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
   color: rgb(99, 98, 98)
 }
@@ -126,3 +104,76 @@
 .recipeUrl:hover {
   color: rgb(255, 0, 0);
 }
+
+.flexContainerLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 20px;
+}
+
+.flexContainerRight {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 55%;
+  margin: 0 20px;
+}
+
+.ingredient {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px;
+  text-align: center;
+  color: rgb(46, 46, 46);
+}
+
+.ingredientsHeader {
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .backButton {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid rgb(215, 59, 24);
+    border-radius: 10px;
+  }
+  .backButton::before {
+    border-radius: 10px;
+  }
+  .backLink {
+    font-size: 15px;
+  }
+  .recipeImage {
+    width: 350px;
+    height: auto;
+  }
+  .ingredient {
+    width: auto;
+  }
+  .flexContainerLeft {
+    width: 90%;
+  }
+  .flexContainerRight{
+    width: 90%;
+  }
+  .recipeContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .backButton {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+

@@ -8,7 +8,7 @@ const Header = () => (
       <span className={styles.author}>by RASHAD MURSHUDOV</span>
     </div>
     <div className={styles.logoContainer}>
-      <img className={styles.logo} src={require('../images/logo.png')} />
+      <img className={styles.logo} src={require('../images/logo.png')} alt="Logo" />
     </div>
   </header>
 )
