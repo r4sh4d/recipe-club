@@ -1,21 +1,30 @@
 
 @media screen and (max-width: 768px) {
   .header{ 
-    font-size: 30px;
-    text-align: center;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: none;
+  }
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw;
   color: white;
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: lighter;
   letter-spacing: 1px;
-  font-size: 40px;
   height: 140px;
   box-shadow: 4px 4px 25px rgb(9, 9, 9);
   padding: 0 50px;
@@ -23,10 +32,18 @@
   background-size: cover;
   text-shadow: 1px 1px 5px rgb(133, 133, 133);
 }
-
+.title {
+  font-weight: lighter;
+}
 .author {
   display: block;
   color: rgb(210, 210, 210);
   font-size: 15px;
   text-transform: none;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  float: right;
 }
