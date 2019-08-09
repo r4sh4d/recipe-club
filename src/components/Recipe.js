@@ -42,9 +42,6 @@ const Recipe = (props) => {
             <div className={styles.imageContainer}>
               <img src={activeRecipe.image_url} className={styles.recipeImage} alt={activeRecipe.title} />
             </div>
-            <p className={styles.recipeUrlContainer}>Recipe:
-            <a className={styles.recipeUrl} href={activeRecipe.f2f_url}>{activeRecipe.f2f_url}</a>
-            </p>
             <p className={styles.recipeUrlContainer}>Publisher's website:
             <a className={styles.recipeUrl} href={activeRecipe.publisher_url}>{activeRecipe.publisher_url}</a>
             </p>
