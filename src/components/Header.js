@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/header.module.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => (
   <header className={styles.header}>
@@ -8,7 +9,7 @@ const Header = () => (
       <span className={styles.author}>by RASHAD MURSHUDOV</span>
     </div>
     <div className={styles.logoContainer}>
-      <img className={styles.logo} src={require('../images/logo.png')} alt="Logo" />
+      <Link to="/"><img className={styles.logo} src={require('../images/logo.png')} alt="Logo" /></Link>
     </div>
   </header>
 )
