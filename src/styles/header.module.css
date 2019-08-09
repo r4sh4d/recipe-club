@@ -47,9 +47,10 @@
   height: 120px;
   float: right;
   animation: logoAnimation 30s infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes logoAnimation {
-  from {transform: none}
+  from {transform: rotate(0deg)}
   to {transform: rotate(360deg)}
 }
