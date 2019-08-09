@@ -12,7 +12,6 @@ const API_KEY = "0abf5b4ffed1e40d2b7039266dac7086"
 
 
 function App() {
-
   const [recipes, setRecipes] = useState([])
   const [text, setText] = useState('')
 
@@ -40,20 +39,22 @@ function App() {
     setText(text)
   }
 
-  const recipesArray = recipes.length !== 0 && recipes.map(recipe =>
-    <RecipeCard
-      imgUrl={recipe.image_url}
-      title={recipe.title}
-      publisher={recipe.publisher}
-      key={recipe.recipe_id}
-      id={recipe.recipe_id}
-    />)
-
   return (
     <div className={styles.main}>
       <Header />
       <Form text={text} handleChange={handleChange} handleSubmit={handleSubmit} />
-      <div className={`${styles.recipesContainer}`}>{recipesArray}</div>
+      {recipes ?
+        <div className={`${styles.recipesContainer}`}>
+          {recipes.length > 0 && recipes.map(recipe =>
+            <RecipeCard
+              imgUrl={recipe.image_url}
+              title={recipe.title}
+              publisher={recipe.publisher}
+              key={recipe.recipe_id}
+              id={recipe.recipe_id}
+            />
+          )}
+        </div> : null}
     </div >
   );
 }
