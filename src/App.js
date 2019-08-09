@@ -21,7 +21,6 @@ function App() {
     const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${text}&count=50`)
     const data = await api_call.json()
     await setRecipes(data.recipes)
-    console.log(recipes)
   }
 
   useEffect(() => {

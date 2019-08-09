@@ -26,9 +26,6 @@ const Recipe = (props) => {
     fetchData()
   }, [props.location.state.recipe])
 
-
-
-  console.log(activeRecipe)
   return (
     <div className={styles.container}>
       <Header />
