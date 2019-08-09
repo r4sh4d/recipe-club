@@ -40,7 +40,7 @@ function App() {
     setText(text)
   }
 
-  const recipesArray = recipes.map(recipe =>
+  const recipesArray = recipes.length !== 0 && recipes.map(recipe =>
     <RecipeCard
       imgUrl={recipe.image_url}
       title={recipe.title}
