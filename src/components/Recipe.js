@@ -20,7 +20,8 @@ const Recipe = (props) => {
 
   useEffect(() => {
     async function fetchData() {
-      const id = props.location.state.recipe
+      const id = props.match.params.id
+      // console.log(props.match)
       console.log(id)
       const request = await fetch(`https://www.food2fork.com/api/get?key=${API_KEY}&rId=${id}`)
       const results = await request.json()
@@ -29,7 +30,7 @@ const Recipe = (props) => {
       setIngredients(results.recipe.ingredients)
     }
     fetchData()
-  }, [props.location.state.recipe])
+  }, [props.match.params.id])
 
   return (
     <div className={styles.container}>
@@ -37,7 +38,6 @@ const Recipe = (props) => {
       {activeRecipe.length !== 0 &&
         <div className={styles.recipeContainer}>
           <div className={styles.flexContainerLeft}>
-
             <h2 className={styles.recipeTitle}>{activeRecipe.title}</h2>
             <p className={styles.recipePublisher}>Publisher: {activeRecipe.publisher}</p>
             <div className={styles.imageContainer}>
@@ -51,7 +51,7 @@ const Recipe = (props) => {
           <div className={styles.flexContainerRight}>
             <h3 className={styles.ingredientsHeader}>Ingredients</h3>
             {ingredients.length !== 0 &&
-              ingredients.map(ingredient => <div><p className={styles.ingredient}>{ingredient}</p><hr></hr></div>)}
+              ingredients.map((ingredient, i) => <div key={i}><p className={styles.ingredient}>{ingredient}</p><hr></hr></div>)}
             <Link className={`${styles.backLink} ${styles.backButton}`} to="/">Go back</Link>
           </div>
 
