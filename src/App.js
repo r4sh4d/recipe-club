@@ -5,6 +5,8 @@ import RecipeCard from './components/RecipeCard'
 import Header from './components/Header'
 import useSpinner from './spinner/useSpinner'
 
+// -------API KEYS---------
+
 // const API_KEY = "0abf5b4ffed1e40d2b7039266dac7086"
 // const API_KEY = "14bc2ab9b94d71d7273fdf67f88fba08"
 // const API_KEY = "a452c267a5f31de9268dab05c0fbe965"
@@ -13,7 +15,9 @@ import useSpinner from './spinner/useSpinner'
 // const API_KEY = "a43b5e59dc13c4677cb3960d471e50e5"
 // const API_KEY = "c5fd8dd82bcdba42f76ab0b6b1d9bffa"
 // const API_KEY = "7d8ebf2dc73caa4556d23c117662daab"
-const API_KEY = "bb16d177f49e97b3dabe5898945c329c"
+// const API_KEY = "bb16d177f49e97b3dabe5898945c329c"
+const API_KEY = "caa3640c12441368d51264dff59baedf"
+
 
 
 
