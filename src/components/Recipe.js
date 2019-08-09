@@ -23,9 +23,9 @@ const Recipe = (props) => {
   useEffect(() => {
     async function fetchData() {
       const id = props.match.params.id
-      const newId = window.location.href.substring(22);
+      // const extractedId = window.location.href.substring(22);
       // console.log(props)
-      const request = id ? await fetch(`https://www.food2fork.com/api/get?key=${API_KEY}&rId=${id}`) : await fetch(`https://www.food2fork.com/api/get?key=${API_KEY}&rId=${newId}`)
+      const request = await fetch(`https://www.food2fork.com/api/get?key=${API_KEY}&rId=${id}`)
       const results = await request.json()
       console.log(results)
       setActiveRecipe(results.recipe)
