@@ -1,7 +1,7 @@
 {
   "name": "recipe-club",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://recipeclub.netlify.com",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
