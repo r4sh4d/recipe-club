@@ -64,7 +64,7 @@
 .inputContainer {
   position: relative;
 }
-/* .inputContainer::after {
+.inputContainer::after {
   content: '';
   position: absolute;
   left: 0px;
@@ -74,7 +74,7 @@
   background-color: rgb(255, 74, 74);
   transform-origin: left;
   animation: inputAnimation 3s infinite ;
-} */
+}
 
 @keyframes inputAnimation {
   0%, 100% {
