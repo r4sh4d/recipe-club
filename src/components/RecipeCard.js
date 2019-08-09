@@ -11,7 +11,7 @@ const RecipeCard = props => {
       <p className={styles.recipePublisher}>Publisher: {props.publisher}</p>
       <Link to={{
         pathname: `/recipe/${props.id}`
-      }} className={styles.more}>View More</Link>matc
+      }} className={styles.more}>View More</Link>
     </div>
   )
 }
