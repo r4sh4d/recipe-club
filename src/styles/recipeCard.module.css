@@ -5,19 +5,32 @@
   border-top-right-radius: 15px;
   object-fit: cover;
 }
-
 .recipeTitle {
   width: 300px;
   margin-top: 15px;
   padding-left: 10px;
   color: rgb(205, 205, 205);
+  transition: .4s color;
 }
 
+.recipeContainer:hover {
+  transform: scale(1.01)
+}
+
+.recipeContainer:hover .recipeTitle{
+  color: white;
+}
+.recipeContainer:hover .more::after, .recipeContainer:hover .more::before {
+  background-color: rgb(215, 59, 24);
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .recipePublisher {
   margin-top: 15px;
   padding-left: 10px;
   padding-bottom: 15px;
   color: rgb(162, 162, 162);
+
 }
 
 .more {
@@ -28,8 +41,9 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: rgb(186, 186, 186);
+  color: rgba(255, 255, 255, 0.893);
   text-decoration: none;
+  transition: .4s color;
 }
 .more:hover {
   color: rgb(215, 59, 24);
@@ -44,7 +58,7 @@
   background-color: currentColor; 
   transform: scaleX(0);
   transform-origin: right;
-  transition: 350ms transform ease-in;
+  transition: 400ms transform ease-in;
 }
 .more::after {
   content: '';
@@ -56,7 +70,7 @@
   background-color: currentColor; 
   transform: scaleX(0);
   transform-origin: right;
-  transition: 200ms transform ease-in;
+  transition: 300ms transform ease-in;
 }
 .more:hover::after,.more:hover::before {
   background-color: rgb(215, 59, 24);
