@@ -37,16 +37,18 @@ function App(props) {
     hideSpinner()
   }
 
-  useEffect(() => {
-    const data = JSON.stringify(recipes);
-    localStorage.setItem('recipes', data)
-  }, [recipes])
+
 
   useEffect(() => {
     const json = localStorage.getItem('recipes')
     const data = JSON.parse(json)
     setRecipes(data)
   }, [])
+
+  useEffect(() => {
+    const data = JSON.stringify(recipes);
+    localStorage.setItem('recipes', data)
+  }, [recipes])
 
   const handleChange = text => {
     setText(text)
