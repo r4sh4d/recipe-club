@@ -30,6 +30,7 @@
   background-size: cover;
   text-shadow: 1px 1px 5px rgb(133, 133, 133);
 }
+
 .title {
   font-weight: lighter;
 }
@@ -55,4 +56,14 @@
 @keyframes logoAnimation {
   from {transform: rotate(0deg)}
   to {transform: rotate(360deg)}
+}
+
+.container {
+  animation: textAnimation 3s infinite;
+}
+
+@keyframes textAnimation {
+  0% {transform: translateX(-150%)}
+  50% {transform: translateX(0) }
+  100% {transform: translateY(-100px)}
 }
