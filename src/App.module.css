@@ -6,10 +6,10 @@
 
 body{
   font-family: sans-serif;
+  background: url('./images/hero-image.jpg');
 }
 
 .main {
-  background: url('./images/hero-image.jpg');
   min-height: 100vh;
 }
 

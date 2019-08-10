@@ -13,9 +13,16 @@
 
   }
 }
+.outerContainer {
+  width: 100vw;
+  height: 140px;
+}
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   align-items: center;
   width: 100vw;
   color: white;
@@ -29,6 +36,8 @@
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url('../images/header.jpg');
   background-size: cover;
   text-shadow: 1px 1px 5px rgb(133, 133, 133);
+  border-bottom: 3px solid rgb(255, 161, 161);
+  z-index: 999;
 }
 
 .title {
@@ -59,7 +68,7 @@
 }
 
 .container {
-  animation: textAnimation 3s infinite;
+  animation: textAnimation 5s infinite;
 }
 
 @keyframes textAnimation {

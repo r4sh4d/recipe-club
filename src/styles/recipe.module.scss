@@ -26,7 +26,6 @@
   z-index: -1;
   background-color: rgba(117, 117, 117, 0.1);
   transform: scaleX(0) scaleY(0);
-  /* transform-origin: center; */
   transition: .5s transform;
 }
 .backButton:hover::before {
@@ -117,7 +116,7 @@
   height: 100%;
   background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../images/recipebg.jpg');
   background-size: cover;
-  border-top: 3px solid rgb(255, 161, 161);
+  border-right: 2px solid black;
   overflow: scroll;
 }
 
