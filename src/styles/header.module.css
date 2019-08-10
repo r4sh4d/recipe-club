@@ -10,9 +10,7 @@
   }
   .logoContainer {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
   }
 }
 .header {
@@ -41,7 +39,11 @@
   font-size: 15px;
   text-transform: none;
 }
-
+.logoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
   width: 120px;
   height: 120px;

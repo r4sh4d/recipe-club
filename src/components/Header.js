@@ -9,7 +9,7 @@ const Header = () => (
       <span className={styles.author}>by RASHAD MURSHUDOV</span>
     </div>
     <div className={styles.logoContainer}>
-      <Link to="/"><img className={styles.logo} src={require('../images/logo.png')} alt="Logo" /></Link>
+      <Link className={styles.logoLink} to="/"><img className={styles.logo} src={require('../images/logo.png')} alt="Logo" /></Link>
     </div>
   </header>
 )

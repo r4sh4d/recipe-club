@@ -21,7 +21,7 @@
 }
 
 .recipeContainer:hover {
-  transform: scale(1.01)
+  transform: scale(1.03)
 }
 
 .recipeContainer:hover .recipeTitle{

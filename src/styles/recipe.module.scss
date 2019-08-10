@@ -141,9 +141,31 @@
 
 .ingredientsHeader {
   font-size: 30px;
-  margin-top: 40px;
-  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+}
+.ingredientsHeader::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 74, 74);
+  transform-origin: left;
+  animation: ingHeaderAnimation 3s infinite ;
+}
+
+@keyframes ingHeaderAnimation {
+  0%, 100% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -168,11 +190,18 @@
   .ingredient {
     width: auto;
   }
+  .ingredientsHeader {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
   .recipeContainer {
     height: auto;
   }
   .recipeTitle,.recipePublisher,.recipeUrlContainer {
     color: black;
+  }
+  .recipeTitle {
+    font-weight: 600;
   }
   .flexContainerLeft {
     width: 90%;
