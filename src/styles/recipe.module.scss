@@ -126,7 +126,7 @@
   background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../images/recipebg.jpg');
   background-size: cover;
   border-right: 2px solid black;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .flexContainerRight {
@@ -136,7 +136,7 @@
   width: 60%;
   margin-left: 20px;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .ingredient {
@@ -239,4 +239,3 @@
     left: 0;
   }
 }
-
