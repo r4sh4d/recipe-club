@@ -2,16 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 .button {
-  padding: 15px 18px;
-  width: 100px;
+  padding: 0.9375rem 1.125rem;
+  width: 6.25rem;
   background-color: rgba(255, 39, 39, .9);
   color: white;
-  margin-left: 10px;
-  margin-right: 5px;
+  margin-left: 0.625rem;
+  margin-right: 0.3125rem;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -51,11 +51,11 @@
 }
 
 .input {
-  width: 300px;
-  font-size: 18px;
-  padding-left: 12px;
-  margin-left: 5px;
-  padding-bottom: 12px;
+  width: 18.75rem;
+  font-size: 1.125rem;
+  padding-left: 0.75rem;
+  margin-left: 0.3125rem;
+  padding-bottom: .75rem;
   background-color: transparent;
   border: none;
   color: rgb(0, 0, 0);
@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 768px) {
   .input {
-    width: 200px;
+    width: 12.5rem;
   }
 }
 
