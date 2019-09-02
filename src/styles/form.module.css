@@ -54,16 +54,20 @@
   width: 18.75rem;
   font-size: 1.125rem;
   padding-left: 0.75rem;
+  margin-top: 1rem;
   margin-left: 0.3125rem;
   padding-bottom: .75rem;
   background-color: transparent;
   border: none;
   color: rgb(0, 0, 0);
   outline: none;
-  position: relative;}
+  position: relative;
+}
+
 .inputContainer {
   position: relative;
 }
+
 .inputContainer::after {
   content: '';
   position: absolute;
@@ -87,7 +91,7 @@
 
 @media screen and (max-width: 768px) {
   .input {
-    width: 12.5rem;
+    width: 16.5rem;
   }
 }
 

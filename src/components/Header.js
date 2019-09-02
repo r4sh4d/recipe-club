@@ -1,27 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../styles/header.module.css'
 import { Link } from 'react-router-dom'
 
 
 const Header = () => {
-
-  // const [scrollWidth, setScrollWith] = useState('10')
-
-
-  // setTimeout(() => console.log(document.body.scrollHeight), 3000)
-
-
-
   window.onscroll = function (e) {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     document.getElementById('scroll').style.width = scrolled + '%'
   }
-  // setInterval(() => {
-
-  //   console.log(document.body.offsetHeight)
-  // }, 200)
 
   return (
     <div>
